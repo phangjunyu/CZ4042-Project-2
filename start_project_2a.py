@@ -68,10 +68,10 @@ def cnn(images):
 
 def main():
 
-    trainX, trainY = load_data('data_batch_1')
+    trainX, trainY = load_data('data/data_batch_1')
     print(trainX.shape, trainY.shape)
     
-    testX, testY = load_data('test_batch_trim')
+    testX, testY = load_data('data/test_batch_trim')
     print(testX.shape, testY.shape)
 
     trainX = (trainX - np.min(trainX, axis = 0))/np.max(trainX, axis = 0)
